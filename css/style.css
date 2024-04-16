@@ -1,0 +1,111 @@
+/* Base styling for the entire document */
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Oswald', sans-serif; /* Using the Google Font Oswald */
+  background: linear-gradient(to right, #5562E8, #DB7093); /* NBA-inspired gradient */
+  color: white;
+  display: flex;
+  flex-direction: column; /* Sets the flex direction to column */
+  align-items: center; /* Center horizontally in the flex direction */
+  justify-content: center; /* Center vertically in the flex direction */
+  text-align: center;
+}
+
+/* Common container styling */
+.container {
+  width: 70%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75); 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Homepage specific styling */
+.homepage-container h1 {
+  font-size: 2.5em;
+  font-weight: 700; 
+}
+
+.homepage-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Search page specific styling */
+.search-container input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+button {
+  font-size: 1em;
+  padding: 12px 24px;
+  background-color: white;
+  color: #5562E8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #f0e9ff;
+}
+
+.results {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#teamLogo {
+  max-width: 100px; 
+  height: auto; 
+  display: block; 
+  margin: 20px auto; 
+}
+
+#results p span {
+  font-weight: bold;  /* Make the font bold */
+  color: #E3D26F;    /* A gold color, assuming it stands out well on your background */
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background for better readability */
+  padding: 2px 5px;  /* Some padding around the numbers */
+  border-radius: 3px; /* Rounded corners for a nicer appearance */
+  font-size: 1.2em;   /* Larger font size than the rest of the text */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .container {
+      width: 70%;
+  }
+
+  #teamLogo {
+    max-width: 150px;
+}
+}
+
+@media (min-width: 1024px) {
+  .container {
+      width: 60%; 
+  }
+
+  .search-container input[type="text"], .search-container button {
+      width: 50%; 
+  }
+
+  #teamLogo {
+    max-width: 200px;
+}
+}
