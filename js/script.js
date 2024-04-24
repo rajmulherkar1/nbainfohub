@@ -60,9 +60,10 @@ function displayResults(team) {
 }
 
 function displayStats(stats) {
-    document.getElementById('fieldGoals').textContent = "Field Goal Percentage: " + stats.fgm + '/' + stats.fga +  " = " + stats.fgp + "%";
-    document.getElementById('threePointers').textContent = "Three Point Percentage: " + stats.tpm + '/' + stats.tpa + " = " + stats.tpp + "%";
-    document.getElementById('freeThrows').textContent = "Free Throw Percentage: " + stats.ftm + '/' + stats.fta + " = " + stats.ftp + "%";
-    document.getElementById('rebounds').textContent = "Offesive Rebounds: " + stats.offReb + "," + " Defensive Rebounds: " + stats.defReb + "," + " Total Rebounds: " + stats.totReb;
-    document.getElementById('assists').textContent = "Assists: " + stats.assists;
+    document.getElementById('fieldGoals').innerHTML = "Field Goals: " + stats.fgm + '/' + stats.fga +  " = <span>" + stats.fgp + "%</span>";
+    document.getElementById('threePointers').innerHTML = "Three Pointers: " + stats.tpm + '/' + stats.tpa + " = <span>" + stats.tpp + "%</span>";
+    document.getElementById('freeThrows').innerHTML = "Free Throws: " + stats.ftm + '/' + stats.fta + " = <span>" + stats.ftp + "%</span>";
+    document.getElementById('rebounds').innerHTML = "Rebounds: <span>" + stats.totReb + "</span>";
+    document.getElementById('assists').innerHTML = "Assists: <span>" + stats.assists + "</span>";
 }
+

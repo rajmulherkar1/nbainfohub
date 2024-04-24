@@ -76,14 +76,19 @@ button {
   margin: 20px auto; 
 }
 
+/* Style adjustments for stats numbers within the results */
 #results p span {
-  font-weight: bold;  /* Make the font bold */
-  color: #E3D26F;    /* A gold color, assuming it stands out well on your background */
-  background-color: rgba(0, 0, 0, 0.6); /* Dark background for better readability */
-  padding: 2px 5px;  /* Some padding around the numbers */
-  border-radius: 3px; /* Rounded corners for a nicer appearance */
-  font-size: 1.2em;   /* Larger font size than the rest of the text */
+  color: #007BFF; /* Bright blue color for the numbers */
+  font-weight: bold; /* Optional: makes numbers bold to stand out more */
 }
+
+/* General text color for other texts in results */
+#results p {
+  color: white; /* Keeps other text white */
+  font-size: 1em; /* Adjust size as needed */
+  margin: 5px 0; /* Spacing for readability */
+}
+
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
